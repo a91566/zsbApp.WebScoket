@@ -34,16 +34,18 @@ namespace zsbApp.WebScoket.ConsoleServer
                 };
                 socket.OnMessage = message =>
                 {
-                    var x = allSockets.Where(i => i.ID == socket.ConnectionInfo.Id.ToString()).FirstOrDefault();
-                    if (x!=null && string.IsNullOrEmpty(x.User))
+                    if (string.IsNullOrEmpty(message))
+                        return;
+                    var fromUser = allSockets.Where(i => i.ID == socket.ConnectionInfo.Id.ToString()).FirstOrDefault();
+                    if (fromUser != null && string.IsNullOrEmpty(fromUser.User))
                     {
-                        x.User = message;
+                        fromUser.User = message;
                         return;
                     }
                     Console.WriteLine($"{socket.ConnectionInfo.Id}:{message}");
                     foreach (var item in allSockets)
                     {
-                        item.IWebSocketConnection.Send($"{item.User}:{message}");
+                        item.IWebSocketConnection.Send($"{fromUser.User}:{message}");
                     }
                     //allSockets.Select(i=>i.IWebSocketConnection).ToList().ForEach(s => s.Send($"{s.us}:{message} "));
                 };
