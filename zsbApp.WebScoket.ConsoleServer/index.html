@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>WebSocket</title>
+</head>
+<script type="text/javascript">
+    function RandomNum(n) {
+        var rnd = "";
+        for (var i = 0; i < n; i++)
+            rnd += Math.floor(Math.random() * 10);
+        return rnd;
+    }
+    var load = function () {
+        var user = document.getElementById('usercode');
+        user.value = RandomNum(5);
+    }
+
+    var start = function () {
+        var inc = document.getElementById('incomming');
+        var wsImpl = window.WebSocket || window.MozWebSocket;
+        var form = document.getElementById('sendForm');
+        var input = document.getElementById('sendText');
+        var user = document.getElementById('usercode');
+
+        inc.innerHTML += "connecting to server ..<br/>";
+
+        // create a new websocket and connect
+        window.ws = new wsImpl('ws://localhost:9146/');
+
+        // when data is comming from the server, this metod is called
+        ws.onmessage = function (evt) {
+            inc.innerHTML += evt.data + '<br/>';
+        };
+
+        // when the connection is established, this method is called
+        ws.onopen = function () {
+            inc.innerHTML += '.. connection open<br/>';
+            var val = user.value;
+            ws.send(val);
+        };
+
+        // when the connection is closed, this method is called
+        ws.onclose = function () {
+            inc.innerHTML += '.. connection closed<br/>';
+        }
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            var val = input.value;
+            ws.send(val);
+            input.value = "";
+        });
+
+    }
+
+    window.onload = load;
+</script>
+<body>
+    <input id="usercode" type="text">
+    <button id="connect" onClick="start();">上线</button>
+
+    <form id="sendForm">
+        <input id="sendText" placeholder="Text to send" />
+    </form>
+    <pre id="incomming"></pre>
+</body>
+</html>

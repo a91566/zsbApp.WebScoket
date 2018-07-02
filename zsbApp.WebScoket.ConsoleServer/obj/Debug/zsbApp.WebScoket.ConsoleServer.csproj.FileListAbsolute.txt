@@ -1,0 +1,8 @@
+E:\Code\GitHub\zsbApp.WebScoket\zsbApp.WebScoket.ConsoleServer\bin\Debug\zsbApp.WebScoket.ConsoleServer.exe.config
+E:\Code\GitHub\zsbApp.WebScoket\zsbApp.WebScoket.ConsoleServer\bin\Debug\zsbApp.WebScoket.ConsoleServer.exe
+E:\Code\GitHub\zsbApp.WebScoket\zsbApp.WebScoket.ConsoleServer\bin\Debug\zsbApp.WebScoket.ConsoleServer.pdb
+E:\Code\GitHub\zsbApp.WebScoket\zsbApp.WebScoket.ConsoleServer\obj\Debug\zsbApp.WebScoket.ConsoleServer.csprojResolveAssemblyReference.cache
+E:\Code\GitHub\zsbApp.WebScoket\zsbApp.WebScoket.ConsoleServer\obj\Debug\zsbApp.WebScoket.ConsoleServer.csproj.CoreCompileInputs.cache
+E:\Code\GitHub\zsbApp.WebScoket\zsbApp.WebScoket.ConsoleServer\obj\Debug\zsbApp.WebScoket.ConsoleServer.exe
+E:\Code\GitHub\zsbApp.WebScoket\zsbApp.WebScoket.ConsoleServer\obj\Debug\zsbApp.WebScoket.ConsoleServer.pdb
+E:\Code\GitHub\zsbApp.WebScoket\zsbApp.WebScoket.ConsoleServer\bin\Debug\Fleck.dll
