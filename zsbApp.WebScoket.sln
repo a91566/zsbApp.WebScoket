@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zsbApp.WebScoket.ConsoleServer", "zsbApp.WebScoket.ConsoleServer\zsbApp.WebScoket.ConsoleServer.csproj", "{1704FD2C-F7D2-46D0-A978-155EE121611B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zsbApp.WebSocketWinForm", "zsbApp.WebSocketWinForm\zsbApp.WebSocketWinForm.csproj", "{239631AA-2853-47EC-ABB2-E6F0CB9DB93C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1704FD2C-F7D2-46D0-A978-155EE121611B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1704FD2C-F7D2-46D0-A978-155EE121611B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1704FD2C-F7D2-46D0-A978-155EE121611B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{239631AA-2853-47EC-ABB2-E6F0CB9DB93C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{239631AA-2853-47EC-ABB2-E6F0CB9DB93C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{239631AA-2853-47EC-ABB2-E6F0CB9DB93C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{239631AA-2853-47EC-ABB2-E6F0CB9DB93C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

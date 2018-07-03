@@ -1,0 +1,11 @@
+E:\Code\GitHub\zsbApp.WebScoket\zsbApp.WebSocketWinForm\bin\Debug\zsbApp.WebSocketWinForm.exe.config
+E:\Code\GitHub\zsbApp.WebScoket\zsbApp.WebSocketWinForm\bin\Debug\zsbApp.WebSocketWinForm.exe
+E:\Code\GitHub\zsbApp.WebScoket\zsbApp.WebSocketWinForm\bin\Debug\zsbApp.WebSocketWinForm.pdb
+E:\Code\GitHub\zsbApp.WebScoket\zsbApp.WebSocketWinForm\obj\Debug\zsbApp.WebSocketWinForm.csprojResolveAssemblyReference.cache
+E:\Code\GitHub\zsbApp.WebScoket\zsbApp.WebSocketWinForm\obj\Debug\zsbApp.WebSocketWinForm.Form1.resources
+E:\Code\GitHub\zsbApp.WebScoket\zsbApp.WebSocketWinForm\obj\Debug\zsbApp.WebSocketWinForm.Properties.Resources.resources
+E:\Code\GitHub\zsbApp.WebScoket\zsbApp.WebSocketWinForm\obj\Debug\zsbApp.WebSocketWinForm.UserControl1.resources
+E:\Code\GitHub\zsbApp.WebScoket\zsbApp.WebSocketWinForm\obj\Debug\zsbApp.WebSocketWinForm.csproj.GenerateResource.Cache
+E:\Code\GitHub\zsbApp.WebScoket\zsbApp.WebSocketWinForm\obj\Debug\zsbApp.WebSocketWinForm.csproj.CoreCompileInputs.cache
+E:\Code\GitHub\zsbApp.WebScoket\zsbApp.WebSocketWinForm\obj\Debug\zsbApp.WebSocketWinForm.exe
+E:\Code\GitHub\zsbApp.WebScoket\zsbApp.WebSocketWinForm\obj\Debug\zsbApp.WebSocketWinForm.pdb

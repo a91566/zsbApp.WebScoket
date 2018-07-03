@@ -11,7 +11,8 @@ namespace zsbApp.WebScoket.ConsoleServer
         {
             FleckLog.Level = LogLevel.Debug;
             var allSockets = new List<SocketInfo>();
-            var server = new WebSocketServer("ws://0.0.0.0:9146");
+            var server = new Fleck.WebSocketServer("ws://0.0.0.0:9146");
+            //var x = new Fleck.websocketc
             server.Start(socket =>
             {
                 socket.OnOpen = () =>
@@ -31,6 +32,10 @@ namespace zsbApp.WebScoket.ConsoleServer
                     var x = allSockets.Where(i=>i.ID == socket.ConnectionInfo.Id.ToString()).FirstOrDefault();
                     if(x!=null)
                         allSockets.Remove(x);
+                    foreach (var item in allSockets)
+                    {
+                        item.IWebSocketConnection.Send($"{x.User}下线了");
+                    }
                 };
                 socket.OnMessage = message =>
                 {
@@ -40,6 +45,10 @@ namespace zsbApp.WebScoket.ConsoleServer
                     if (fromUser != null && string.IsNullOrEmpty(fromUser.User))
                     {
                         fromUser.User = message;
+                        foreach (var item in allSockets)
+                        {
+                            item.IWebSocketConnection.Send($"{message}上线啦。");
+                        }
                         return;
                     }
                     Console.WriteLine($"{socket.ConnectionInfo.Id}:{message}");
